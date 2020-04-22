@@ -7,26 +7,43 @@ The dataset used in this project was taken from Kaggle which is an online commun
 Link: https://www.kaggle.com/rounakbanik/the-movies-dataset
 
 Keeping the final goal of this project, i.e. to predict the revenue based on a set of features, we performed data preprocessing. This involved the following steps:
+
 •	Remove records which had no revenue or blank
+
 •	Fill in the missing values in the budget field with the median of the column values
+
 •	Remove records whose overview was not in English as NLP was one of the major parts of this project
+
 •	Create a one-hot-encoding for the genres as many records had multiple genres
+
 •	Create a feature called “vote_total” which was the product of the columns “vote_average” and “vote_count”. 
 
-Categorization of revenue for classification
-CLASS	        Revenue Value
-low-profit	  value <= 9631905.25
-profit	      9631905.25< value <=99347600.25
-high-profit	  value > 99347600.25
+Categorization of revenue for classification:
+
+CLASS	    |    Revenue Value
+
+low-profit |   value <= 9631905.25
+
+profit	   |  9631905.25< value <=99347600.25
+
+high-profit  |  value > 99347600.25
 
 The following regression techniques were used to predict the revenue box office in US dollars:
+
 •	Linear Regression
+
 •	Random Forest Regressor
+
 •	Neural Networks
 
+
 The following classfication techniques were used to predict the category of the predicted revenue:
+
 •	Logistic Regression
+
 •	Random Forest Classifier
+
 •	Support Vector Classifier(SVC) with NLP
+
 •	Neural Networks
 
